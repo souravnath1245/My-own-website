@@ -18,6 +18,9 @@
     font-size: 1.5rem;
     background-color: var(--color-bg-white);
 }
+.input group{
+    
+}
 .input-group #search{
     border: none;
     width: 100%;
