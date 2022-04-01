@@ -1,0 +1,50 @@
+@media only screen and (max-width:900px  )and (min-width: 600px){
+    /* Header  */
+    .main-navbar{
+        display:none;
+    }
+
+    /* Banner  */
+    .banner{
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .bannerContent{
+        width: 400px;
+        order: 2;
+      }
+      .themeToggle{
+        width: 15%;
+      }
+      .sectionImage{
+          order: 1;
+      }
+
+      /* Rate  */
+      .card-Section{
+        flex-direction: row;   
+        flex-wrap: wrap;
+    }
+    .card{
+       width: 45%;
+        order: 1;
+       margin-bottom: 50px;
+    }
+    .allSection{
+        padding-bottom: 10px;
+    }
+    .card-Section{
+        padding: 20px
+    }
+    .plan--popular{
+        order: 2;
+        width: 50%;
+    }
+
+    /* Protfolio  */
+    .myPortfolio{
+        grid-template-columns: repeat(2, .8fr);
+        justify-items: center;
+        grid-gap: 10px;
+    }
+}

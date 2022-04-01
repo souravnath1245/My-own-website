@@ -1,0 +1,30 @@
+.portfolioSection {
+  display: grid;
+  grid-template: repeat(1, 1fr) / repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  gap: 2rem;
+}
+.portfolioSection img{
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .portfolioSection {
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1400px) {
+  .portfolioSection {
+    grid-gap: 1rem;
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+  }
+  .img2 {
+    grid-column: 2/4;
+    grid-row: 1/3;
+  }
+}

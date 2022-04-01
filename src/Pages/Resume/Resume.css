@@ -1,0 +1,73 @@
+.main-nav ul li{
+    list-style: none;
+
+}
+.main-nav ul li .link{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+.main-nav ul{
+    justify-content: space-around;
+}
+.main-nav ul li {
+    padding: 20px 95px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px 4px white;
+
+}
+.main-nav ul li:hover{
+    box-shadow: 0 1px 2px 1px white;
+}
+.educationSection {
+    padding-top:30px; 
+    padding-bottom:30px;
+}
+
+.educationHeader{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.aboutEducation{
+    width: 550px;
+    padding: 30px;
+    box-shadow: 0px 2px 3px 4px white;
+    border-radius: 8px;
+    transition: .8s all ease-in-out;
+    margin-bottom: 30px;
+}
+.aboutEducation:hover{
+    background-color: #EF073B;
+    color: white
+}
+.point{
+    float: right;
+    width: 60px;
+    height: 25px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 1px 2px 5px 2px white;
+}
+.aboutEducation:hover .point{
+    box-shadow: none;
+    background-color: #FE024E;
+    box-shadow: 1px 2px 6px 1px rgba(226, 187, 182, 0.774);
+}
+@media only screen and (max-width: 600px){
+    .main-nav ul{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content:center;
+    }
+    .aboutEducation{
+        width: 350px;
+       margin: 0 auto;
+    }
+    .main-nav ul li {
+        padding: 20px 80px;
+       
+    }
+}

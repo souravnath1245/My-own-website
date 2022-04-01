@@ -1,0 +1,29 @@
+
+.themeToggle{
+  position: absolute;
+  top:6rem;
+  right: 7rem;
+  z-index: 10;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: .5rem 1.2rem;
+  
+}
+.darkBorder{
+  border: 1px  solid black;
+}
+.lightBorder{
+  border: 1px solid white;
+}
+
+.darkTheme{
+  background-color: var(--color-bg-dark);
+  color: var(--color-bg-white);
+}
+.lightTheme{
+  background-color: var(--color-bg-white);
+  color: var(--color-bg-dark) ;
+}
+.menuIcon{
+  font-size: 2rem;
+}

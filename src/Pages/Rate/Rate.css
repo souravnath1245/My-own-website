@@ -1,0 +1,136 @@
+
+.block__header{
+    text-align: center;
+    padding: 50px;
+}
+
+.block__header p{
+    color: var(--color-paragraph);
+}
+.input-group{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--color-accent);
+    border-radius: 25px;
+    padding: 5px;
+    font-size: 1.5rem;
+    background-color: var(--color-bg-white);
+}
+.input-group #search{
+    border: none;
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 20px;
+    outline: 0;
+}
+.card-Section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:40px 0px;
+    
+
+}
+.card{
+    width: 28%;
+    margin: 0 auto;
+    background-color: #d4dce2;
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card--header .monthBadge,.badge{
+    font-size: 1.5rem;
+}
+
+.card--header .badge{
+    margin-left: 8rem
+}
+.plan--popular{
+    transform: scale(1.1);
+    /* transition: all 1s ease-in-out; */
+}
+.plan--popular:hover{
+    transform: scale(1.2);
+}
+.card__popular{
+    background-color: var(--color-primary) !important;
+}
+.card--header{
+    background-color: var(--color-secondary);
+    padding: 2.5rem;
+    margin-top: -15px;
+    color: var(--color-bg-white)
+}
+.plan--name{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: -4px;
+}
+
+.plan--price{
+    font-size: 3rem;
+}
+.plan-description{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.card--body{
+    padding: 8px 18px;
+    
+
+}
+.card--body .list{
+    padding: 1rem 2.2rem
+}
+.list--item{
+    list-style-type:square;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color:var(--color-primary)
+}
+.buy-button{
+    width: 100%;
+    padding: 15px ;
+    padding-bottom: 15px;
+    border:1px solid var(--color-primary);
+    border-radius: 25px;
+    outline: none;
+    font-size: 1.2rem;
+}
+.buy-button:hover{
+    background-color: var(--color-primary);
+    color: var(--color-bg-white);
+}
+
+@media only screen and (max-width: 600px) {
+    
+
+    .card-Section{
+        flex-direction: column;   
+        padding:20px 0px;
+    }
+    .card{
+        width: 80%;
+       margin-bottom: 80px;
+    }
+    .block__header{
+        padding: 2rem;
+    }
+    .block__header p{
+        margin-bottom: 2rem;
+    }
+    .input-group{
+        width: 90%;
+       
+    }
+    
+  }

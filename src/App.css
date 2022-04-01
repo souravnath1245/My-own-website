@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+:root{
+    --color-bg-dark: black ;
+    --color-bg-white: white;
+    
+    --color-primary: #0c3974;
+    --color-secondary: #00d9ff;
+    --color-accent: #ff3400;
+    --color-heading: #282921;
+    --color-paragraph: #a399ca;
+    --color-bg-subdark: rgba(20, 18, 18, 0.952);
+    --color-shadow: rgb(255, 251, 0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*, *::after, *::before{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 62.5%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body{
+    box-sizing: border-box;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2.5rem;
+}
+h4{
+    font-size: 2rem;
+}
+h5{
+    font-size: 1.5rem;
+}
+h6{
+    font-size: 1rem;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.8rem;
+    
+}
+li{
+    list-style: none;
+}
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    h4{
+        font-size: 1.5rem;
+    }
+    h5{
+        font-size: 1.2rem;
+    }
+    h6{
+        font-size: 1rem;
+    }
+    
+   
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

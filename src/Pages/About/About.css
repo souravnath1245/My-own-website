@@ -1,0 +1,240 @@
+.section__header {
+  height: 25vh;
+  /* background: url(../../images/page-header/about2.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: 800;
+  color: black;
+  text-align: center;
+  position: relative;
+  background-color: rgba(0, 4, 255, 0.664);
+}
+.header__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header__title {
+  font-size: 5rem;
+}
+@media screen and (max-width: 600px) {
+    .section__header{
+        color: rgb(247, 248, 247);
+        ;
+    }
+    .header__title {
+      font-size: 4rem;
+    }
+}
+
+
+/* Personal Information  */
+.information--section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.information{
+  width: 45%;
+  background-color: blue;
+}
+.experience{
+  width: 45%;
+  /* background-color: orange; */
+}
+.content--body {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+}
+.experience--tocken{
+  display: grid;
+  padding: 2rem 0;
+  gap:1rem;
+  grid-template-columns: repeat(2 , 1fr);
+}
+.tocken{
+  width: 95%;
+  background-color: lightgreen;
+  padding: 2rem;
+border-radius: 1rem;
+}
+.tocken h1{
+  padding-left: 10px;
+  font-size: 55px;
+  font-family: "Lobster", cursive;
+  color: #72b626;
+  font-weight: 900;
+}
+.tocken p{
+  text-align: left;
+  font-size: 2.4rem;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+
+}
+.tocken p::before{
+  content: "==>";
+  font-size: 2rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 1rem;
+  color: #72b626;
+}
+
+
+/* 
+.header .title-bg {
+  font-size: 110px;
+  position: absolute;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgba(224, 182, 182, 0.349);
+  top: -48px;
+  right: 31%;
+  letter-spacing: 10px;
+}
+.selfTitle h1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+.selfTitle .title {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: crimson;
+}
+.selfTitle p {
+  font-family: "Lobster", cursive;
+  text-transform: capitalize;
+  line-height: 40px;
+  cursor: pointer;
+}
+.card p {
+  font-size: 20px;
+}
+.card h1 {
+  padding-left: 10px;
+  font-size: 55px;
+  font-family: "Lobster", cursive;
+  color: #72b626;
+  font-weight: 900;
+}
+.cardTitle i {
+  font-size: 23px;
+  padding: 5px;
+  font-weight: 900;
+  color: #72b626;
+}
+.cardTitle p {
+  font-size: 23px;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+}
+.aboutButton {
+  align-items: center;
+  width: 200px;
+  padding: 18px;
+  border-radius: 30px;
+  border: 1px solid chocolate;
+  display: flex;
+  justify-content: space-between;
+}
+.aboutButton span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.aboutButton h1 {
+  font-family: "Abril Fatface", cursive;
+}
+.underline {
+  width: 400px;
+  margin: auto;
+  color: chocolate;
+}
+
+.skillTitle {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.education {
+  height: 100vh;
+}
+
+.resume-box ul li {
+  position: relative;
+  border-left: 1px solid chocolate;
+}
+.resume-box ul li .icon {
+  position: absolute;
+  top: -10px;
+  left: -25px;
+  width: 50px;
+  height: 50px;
+  color: white;
+  background: #72b626;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resume-box ul li {
+  list-style: none;
+}
+.resume-box .time {
+  padding: 5px;
+  background: rgba(128, 128, 128, 0.568);
+  border-radius: 30px;
+}
+.resume-box ul li h5 {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+.resume-box ul li p {
+  font-family: "Playfair Display", serif;
+}
+.resume-box ul li h5 .place {
+  color: chocolate;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutButton {
+    width: 200px;
+  }
+  .card {
+    box-shadow: 0px 10px 12px -3px grey;
+  }
+  .card:hover {
+    box-shadow: none;
+  }
+  .underline {
+    width: 300px;
+  }
+  .title-bg {
+    display: none;
+  }
+  .subHeader {
+    font-size: 35px;
+    color: rgb(177, 80, 0);
+  }
+  .header .headerAbout {
+    text-shadow: 2px 3px 4px yellow;
+    font-size: 40px;
+  }
+  .aboutMain {
+    background-image: linear-gradient(
+      45deg,
+      #b1d6c0c7,
+      #b6eab3d9,
+      #bfd6b0,
+      #69e09ea6,
+      transparent
+    );
+    height: 4600px;
+  }
+} */

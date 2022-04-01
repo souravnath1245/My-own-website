@@ -1,0 +1,92 @@
+.mainContact{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+.contact{
+    width: 40%;
+    padding: 25px 5px;
+    text-align: center;
+    background: #d4dce26e;
+    border-radius: 10px;
+}
+.contactFormSection{
+    width: 50%;
+}
+.contactServicer{
+    padding: 0px 20px;
+}
+.contactImage{
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.contactImage:hover img{
+    transform: scale(1.1);
+}
+.contactImage img{
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+    object-fit:cover;
+}
+.contactServicer h4{
+    font-size: 30px;
+    font-weight: 500;
+}
+.contactServicer span{
+    font-size: 18px
+}
+.formTitle{
+    margin-top: 20px;
+}
+.formSection{
+    padding: 40px;
+    border-radius : 10px;
+    background-color: #d4dce26e;
+}
+.formSection input,textarea{
+    font-size: 1.5rem;
+}
+.inputField{
+    width: 98%;
+    padding: 13px;
+    margin:20px 0px;
+    border-radius: 10px;
+    border: 1px solid gray;
+
+}
+.inputText{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.formSubmit{
+    background-color: #b8bfc5ad;
+}
+
+
+@media only screen and (max-width:600px){
+    .mainContact{
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact{
+        width: 90%;
+        margin: auto;
+        padding:2rem 2rem;
+        margin-bottom: 2rem;
+    }
+    .contactImage{
+        width: 350px;
+    }
+    .contactImage img{
+        width: 100%;
+    }
+    .contactFormSection{
+        width: 90%;
+        margin: auto;
+    }
+
+}

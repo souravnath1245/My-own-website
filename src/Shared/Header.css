@@ -1,0 +1,108 @@
+.secContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.navigation {
+  background-color: var(--color-bg-subdark);
+}
+.navbarBrand .brandName {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-decoration: none;
+  color: var(--color-bg-white);
+}
+.navbarBrand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.brandContent {
+  text-align: center;
+}
+.brandName,
+.nameTitle {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.navbarBrand .nameTitle {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-bg-white);
+  margin-top: -5px;
+  text-shadow: 2px 0px 3px var(--color-shadow);
+  letter-spacing: 1px;
+}
+.main-navbar {
+  display: flex;
+  height: 50px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--color-bg-white);
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.unorderList {
+  display: flex;
+  flex-direction: row;
+  width: 60rem;
+  justify-content: space-between;
+}
+.unorderList li {
+  list-style: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.loginBtn {
+  color: white;
+  font-size: 1.4rem;
+  background-color: blue;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.toggle-Button {
+  color: white;
+  font-size: 4rem;
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbarBrand {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .unorderList {
+    flex-direction: column;
+    background: black;
+    width: 100%;
+    height: 40vh;
+    justify-items: center;
+    position: absolute;
+    top: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    left: 0;
+    z-index: 1000;
+  }
+  .displayItem {
+    display: none;
+  }
+  .nav-link {
+    text-decoration: none;
+    color: var(--color-bg-white);
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  .toggle-Button {
+    display: inline-block;
+    height: 40px;
+    position: relative;
+    top: -1rem;
+  }
+}

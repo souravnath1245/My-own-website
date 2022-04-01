@@ -1,0 +1,54 @@
+/* 
+
+.myContainer{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.sectionTitle{
+    color: chocolate;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+.sectionHeader{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.mainService{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap : 20px;
+}
+.skn-service{
+    width: 350px;
+    height:300px;
+    margin-right: 40px;
+    box-shadow:0px 2px 5px 8px white;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .myContainer{
+    text-align: center;
+    width:100%;
+    
+  }
+  .mainService{
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+
+ 
+}
+
+.skn-service{
+    width: 350px;
+    height:300px;
+    padding: 10px
+    
+}
+
+} */
