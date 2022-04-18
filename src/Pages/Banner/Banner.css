@@ -9,7 +9,7 @@
   padding: 20px;
 }
 .bannerContent{
-  width: 500px
+  width: 50rem;
 }
 .wrapper{
   padding: 3rem 0 2rem 0;
@@ -70,18 +70,18 @@
     justify-content: space-between;
   }
   .bannerContent{
-    width: 400px;
+    width: 33rem;
     margin-bottom: 20px;
   }
   .themeToggle{
     right: 2rem;
   }
   .bannerImage{
-    width: 350px;   
+    width: 33rem;   
       margin: auto;
   
   }.bannerImage::before{
-    width: 400px;
-    height: 311px;
+    width: 35rem;
+    height:28.3rem;
   }
 }

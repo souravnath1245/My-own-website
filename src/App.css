@@ -49,6 +49,10 @@ p{
 li{
     list-style: none;
 }
+.container{
+    width: 85%; 
+    margin: 0 auto;
+}
 @media only screen and (max-width: 600px) {
     h1{
         font-size: 3rem;
@@ -68,6 +72,9 @@ li{
     h6{
         font-size: 1rem;
     }
-    
+    .container{
+        width: 95%; 
+        margin: 0 auto;
+    }
    
   }

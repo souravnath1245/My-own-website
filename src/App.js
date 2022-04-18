@@ -7,10 +7,16 @@ import NotFound from './Pages/NotFound/NotFound';
 import About from './Pages/About/About';
 import Service from './Pages/Service/Service';
 import Blogs from './Pages/Blogs/Blogs';
-// import Project from './Pages/Project/Project';
-// import Portfolio from './Pages/portfolio/Portfolio';
 import "./tablet.css"
-import PrePortfolio from './component/PrePortfolio';
+import Login from './Login/Login';
+import Portfolio from './Pages/Portfolio/Portfolio';
+import All from './components/portfolioDetails/All';
+import Youtube from './components/portfolioDetails/youtube';
+import Photography from './components/portfolioDetails/photography';
+import Resume from './Pages/Resume/Resume';
+import Education from './Pages/Resume/Education';
+import Skill from './Pages/Resume/Skill';
+import Experience from './Pages/Resume/Experience';
 
 function App() {
   return (
@@ -20,10 +26,21 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/prePortfolio" element={<PrePortfolio />} />
         <Route path="/service" element={<Service /> } />
+        <Route path="/portfolio" element={<Portfolio /> } >
+          <Route index element={<All/>}/>
+          <Route path='youtube' element={<Youtube/>}/>
+          <Route path='photography' element={<Photography/>}/>
+          </Route>
+        <Route path="/resume" element={<Resume /> } >
+          <Route index element={<Skill/>}/>
+          <Route path='education' element={<Education/>}/>
+          <Route path='experience' element={<Experience/>}/>
+          </Route>
+        
         <Route path="/blogs" element={<Blogs /> } />
         <Route path="/about" element={<About /> } />
+        <Route path="/login" element={<Login /> } />
         <Route path="*" element={<NotFound />} />
        
 

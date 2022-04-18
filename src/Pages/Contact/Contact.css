@@ -17,7 +17,7 @@
     padding: 0px 20px;
 }
 .contactImage{
-    width: 500px;
+    width: 50rem;
     margin: 0 auto;
     border-radius: 8px;
     overflow: hidden;
@@ -73,13 +73,14 @@
     }
     
     .contact{
-        width: 90%;
+        width: 90vw;
         margin: auto;
         padding:2rem 2rem;
         margin-bottom: 2rem;
     }
     .contactImage{
-        width: 350px;
+        width: 80vw;
+        margin: 0 auto;
     }
     .contactImage img{
         width: 100%;

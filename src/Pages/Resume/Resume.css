@@ -1,73 +1,99 @@
-.main-nav ul li{
-    list-style: none;
-
+.main-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-.main-nav ul li .link{
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    color: black;
-}
-.main-nav ul{
-    justify-content: space-around;
+.main-nav ul li .link {
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
 }
 .main-nav ul li {
-    padding: 20px 95px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 3px 4px white;
+  border-radius: 10px;
+  width: 25%;
+  text-align: center;
+  background-color: rgba(190, 193, 194, 0.349);
+  box-shadow: 0px 2px 3px 4px white;
+  padding: 1rem;
+}
+.main-nav ul li:hover {
+  box-shadow: 0 1px 2px 1px gray;
+}
 
-}
-.main-nav ul li:hover{
-    box-shadow: 0 1px 2px 1px white;
-}
 .educationSection {
-    padding-top:30px; 
-    padding-bottom:30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
+.sectionTitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.educationHeader {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.aboutEducation {
+  width: 50rem;
+  padding: 2.5rem;
+  box-shadow: 0px 2px 3px 4px rgb(218, 218, 218);
+  border-radius: 8px;
+  transition: 0.6s all ease-in-out;
+  margin-bottom: 2rem;
+  border-left: 4px solid chocolate ;
+}
+.aboutEducation:hover {
+  background-color: #ef073b;
+  color: white;
+}
+.card__content h3{
+    font-weight: 600;
+}
+.educational__space{
+    margin: 1rem 0;
+}
+.educational__space span{
+    font-size: 1.2rem;
+    font-weight: 500;
 
-.educationHeader{
-    margin-bottom: 30px;
-    font-size: 30px;
-    font-weight: 700;
 }
-.aboutEducation{
-    width: 550px;
-    padding: 30px;
-    box-shadow: 0px 2px 3px 4px white;
-    border-radius: 8px;
-    transition: .8s all ease-in-out;
-    margin-bottom: 30px;
+.point {
+  float: right;
+  width: 5rem;
+  padding: .3rem;
+  border-radius: 10px;
+  text-align: center;
+  text-shadow: 2px  1px 2px chocolate;
+  transition: .8s all ease-in; 
 }
-.aboutEducation:hover{
-    background-color: #EF073B;
-    color: white
+.aboutEducation:hover .point {
+  background-color: #fe024e;
+  box-shadow: 1px 2px 6px 1px rgba(226, 187, 182, 0.774);
 }
-.point{
-    float: right;
-    width: 60px;
-    height: 25px;
-    border-radius: 10px;
-    text-align: center;
+.card__content p{
+    margin-top: 1rem
+}
+@media only screen and (max-width: 600px) {
+  .main-nav ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .main-nav ul li {
+    padding: 20px 80px;
+    width: 90%;
+  }
+
+  .educationSection {
+    flex-direction: column;
+  }
+  .educationPart {
+    width: 95%;
     margin: 0 auto;
-    box-shadow: 1px 2px 5px 2px white;
-}
-.aboutEducation:hover .point{
-    box-shadow: none;
-    background-color: #FE024E;
-    box-shadow: 1px 2px 6px 1px rgba(226, 187, 182, 0.774);
-}
-@media only screen and (max-width: 600px){
-    .main-nav ul{
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content:center;
-    }
-    .aboutEducation{
-        width: 350px;
-       margin: 0 auto;
-    }
-    .main-nav ul li {
-        padding: 20px 80px;
-       
-    }
+  }
+  .aboutEducation {
+    width: 90%;
+    margin: 0 auto 1rem auto;
+  }
 }

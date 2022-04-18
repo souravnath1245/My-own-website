@@ -1,49 +1,47 @@
 import React from "react";
 import "./Resume.css";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
- 
-} from "react-router-dom";
-import Education from "./Education";
-import Experience from "./Experience";
-import Skill from "./Skill";
+import { Link, Outlet } from "react-router-dom";
 
 const Resume = () => {
   return (
-    <div className="myContainer">
-      <span className="sectionTitle">2+ Years of Experience</span>
-      <h1 className="sectionHeader">My Resume</h1>
+    <div className="container">
+      <div className="page--header py-9 text-center border-2 rounded-lg shadow-lg shadow-black-500/20">
+        <h1 className="text-7xl font-extrabold py-2"> Resume</h1>
+        <h3
+          className="text-4xl pb-2"
+          style={{ color: "var( --color-secondary)" }}
+        >
+          Combination of Skill & Experience
+        </h3>
+      </div>
 
-      <div className="navigation">
-        <Router>
-          <div className="main-nav">
-            <ul className="d-flex justify-content-space-around align-itmes-center">
-              <li>
-                
-                <Link className="link" to="/education">Education</Link>
-              </li>
-              <li>
-                <Link className="link" to="/skill">Professional Skills</Link>
-              </li>
-              <li>
-                <Link  className="link" to="/experience">Experience</Link>
-              </li>
-              <li>
-                <Link className="link" to="/iterview">Interview</Link>
-              </li>
-            </ul>
+      <div className="section--nevigation my-9">
+        <nav className="main-nav">
+          <ul className="">
+            <li>
+              <Link className="link" to="education">
+                Education
+              </Link>
+            </li>
+            <li>
+              <Link className="link" to="">
+                Professional Skills
+              </Link>
+            </li>
+            <li>
+              <Link className="link" to="experience">
+                Experience
+              </Link>
+            </li>
+            <li>
+              <Link className="link" to="iterview">
+                Interview
+              </Link>
+            </li>
+          </ul>
 
-            <Routes>
-                <Route path="education" element={<Education />} />
-                <Route path="skill" element={<Skill />} />
-                <Route path="experience" element={<Experience />} />
-                {/* <Route path="interview" element={<Interview />} /> */}
-            </Routes>
-          </div>
-        </Router>
+          <Outlet />
+        </nav>
       </div>
     </div>
   );

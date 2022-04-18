@@ -3,12 +3,13 @@ import "./Home.css";
 import Banner from "./../Banner/Banner";
 import { useState } from "react";
 import Rate from "./../Rate/Rate";
-import Portfolio from "../portfolio/Portfolio";
 import Contact from "../Contact/Contact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../Footer/Footer";
-// import Resume from "../Resume/Resume";
+import Project from "./project";
+import Resume from './../Resume/Resume';
+
 
 const Home = () => {
   const [theme, setTheme] = useState(true);
@@ -40,7 +41,9 @@ const Home = () => {
       </header>
       <main className={theme === true ? "lightTheme" : "darkTheme"}>
         <Rate />
-        <Portfolio />
+        <Project />
+        <Resume/>
+        
         <Contact />
         <hr style={{
           marginTop: "3rem"
